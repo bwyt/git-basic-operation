@@ -15,18 +15,22 @@
 		2.5 git log：查看历史操作(git reflog)
 		2.6 git reset --hard HEAD~：回退工作区版本到上一个版本
 			(git reset --hard 版本号)
+			(版本号 -> 前7位)
 		2.7 git checkout 文件名：撤销工作区内的内容
 		2.8 git checkout HEAD 文件名：撤销暂存区内的内容
 
 	3. 多人操作
-
 		3.1 创建项目（Github）
 		3.2 首次下载项目git clone 项目地址
+			git add./文件名 
+			git commit -m '注释'
 		3.3 将项目推送到远程仓库git push
 		3.4 再次加载项目git pull
+
 	4. pycharm的使用
-		ctrl + K（VCS -> commit）：git add./文件名 + git commit -m '注释'
-		ctrl + shift + K (VCS -> git -> push)：git push
-		VSC -> git ->pull：git pull
+		ctrl + K（VCS -> commit）： git add./文件名 + git commit -m '注释'
+		ctrl + shift + K (VCS -> git -> push)： git push
+		VSC -> git -> pull： git pull
+		
 	5. 解决终端显示中文
 		set LESSCHARSET=utf-8
