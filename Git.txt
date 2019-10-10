@@ -28,9 +28,18 @@
 		3.4 再次加载项目git pull
 
 	4. pycharm的使用
+	
 		ctrl + K（VCS -> commit）： git add./文件名 + git commit -m '注释'
-		ctrl + shift + K (VCS -> git -> push)： git push
-		VSC -> git -> pull： git pull
+		ctrl + shift + K (VCS -> Git -> push)： git push
+		VSC -> Git -> pull： git pull
 		
+		分支： 
+			1. VCS -> Git -> pull -> 选择框选择自定义的分支 -> pull -> Merge
+				左：GitHub主线内容
+				中：自己界面内容
+				右：GitHub分线内容
+			2. VCS -> Git -> Branches -> 选择分支 -> CheckOut As... -> OK
+			3.  ctrl + K
+				ctrl + shift + K
 	5. 解决终端显示中文
 		set LESSCHARSET=utf-8
