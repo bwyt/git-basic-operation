@@ -1,10 +1,32 @@
-张三
-哈哈哈
+1. git（工作区、暂存区、仓库区）
 
+	1. 安装
 
+	2. 单人操作
+		2.1 git init：在项目中初始化git
+		2.2 git status：查看暂存区状态
+			(红色文件证明在工作区,绿色文件正文在暂存区)
+		2.3 git add .：将工作区所有内容添加到暂存区
+			git add 文件名：将指定文件添加到暂存区
+		2.4 git commit -m '注释'：将暂存区内容存入仓库区，并添加注释
+			(如果出现	Omit --global to set the identity only in this repository.fatal: unable to auto-detect email address (got 'admin@DESKTOP-M9JRPBK.(none)')	就设置用户名和邮箱)
+			git config --global  user.name "Username"	设置用户名
+			git config --global  user.email "Username@example.com"	设置邮箱
+		2.5 git log：查看历史操作(git reflog)
+		2.6 git reset --hard HEAD~：回退工作区版本到上一个版本
+			(git reset --hard 版本号)
+		2.7 git checkout 文件名：撤销工作区内的内容
+		2.8 git checkout HEAD 文件名：撤销暂存区内的内容
 
+	3. 多人操作
 
-我是李四
-
-
-王五来了
+		3.1 创建项目（Github）
+		3.2 首次下载项目git clone 项目地址
+		3.3 将项目推送到远程仓库git push
+		3.4 再次加载项目git pull
+	4. pycharm的使用
+		ctrl + K（VCS -> commit）：git add./文件名 + git commit -m '注释'
+		ctrl + shift + K (VCS -> git -> push)：git push
+		VSC -> git ->pull：git pull
+	5. 解决终端显示中文
+		set LESSCHARSET=utf-8
