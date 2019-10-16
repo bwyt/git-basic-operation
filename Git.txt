@@ -9,9 +9,13 @@
 		2.3 git add .：将工作区所有内容添加到暂存区
 			git add 文件名：将指定文件添加到暂存区
 		2.4 git commit -m '注释'：将暂存区内容存入仓库区，并添加注释
-			(如果出现	Omit --global to set the identity only in this repository.fatal: unable to auto-detect email address (got 'admin@DESKTOP-M9JRPBK.(none)')	就设置用户名和邮箱)
+			(如果出现	
+			Omit --global to set the identity only in this repository.fatal: unable to auto-detect email address 			     		(got 'admin@DESKTOP-M9JRPBK.(none)')	
+			就设置用户名和邮箱)
+			
 			git config --global  user.name "Username"	设置用户名
 			git config --global  user.email "Username@example.com"	设置邮箱
+			
 		2.5 git log：查看历史操作(git reflog)
 		2.6 git reset --hard HEAD~：回退工作区版本到上一个版本
 			(git reset --hard 版本号)
@@ -19,7 +23,7 @@
 		2.7 git checkout 文件名：撤销工作区内的内容
 		2.8 git checkout HEAD 文件名：撤销暂存区内的内容
 
-	3. 多人操作
+	3. 多人操作(上传项目)
 		3.1 创建项目（Github）
 		3.2 首次下载项目git clone 项目地址
 			git add./文件名 
@@ -43,3 +47,36 @@
 				ctrl + shift + K
 	5. 解决终端显示中文
 		set LESSCHARSET=utf-8
+		
+		
+2. 下载项目、运行（flask+vue前后端分离项目）
+	
+	1. GitHub上获取项目地址
+	
+	2. 新建文件夹 --> 重命名 --> cmd
+	
+	   后端：下载项目：git clone 项目地址
+	   
+	   	 新建文件夹 --> 重命名 --> 后端项目名 --> cmd
+ 
+		 pip install -r 需求文档.txt
+		 
+		 flask db init
+		 
+		 flask db migrate
+		 
+		 flask db upgrade
+		 
+		 python 入口文件
+		 
+		 
+	   前端：下载项目：git clone 项目地址
+	   
+	   	 新建文件夹 --> 重命名 --> 前端项目名 --> cmd
+	   	 
+		 cnpm install --> 安装所有依赖包
+		 
+		 cnpm run dev
+		 
+		 
+	
